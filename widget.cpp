@@ -13,6 +13,7 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    setWindowTitle("启动！");
 
     QFile config("config.json");
     QByteArray jsonData;
