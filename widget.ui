@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>90</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>     启   动</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolBox" name="toolBox">
+       <property name="currentIndex">
+        <number>4</number>
+       </property>
+       <widget class="Form" name="page">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>800</width>
+          <height>429</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Star Rail</string>
+        </attribute>
+       </widget>
+       <widget class="Form" name="page_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>800</width>
+          <height>429</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>GenShin Impact</string>
+        </attribute>
+       </widget>
+       <widget class="Form" name="page_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>800</width>
+          <height>429</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>ZZZ</string>
+        </attribute>
+       </widget>
+       <widget class="Form" name="page_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>800</width>
+          <height>429</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Honkai Impact 3rd</string>
+        </attribute>
+       </widget>
+       <widget class="SettingForm" name="SettingPage">
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <attribute name="label">
+         <string>Setting</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Form</class>
+   <extends>QWidget</extends>
+   <header>form.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SettingForm</class>
+   <extends>QWidget</extends>
+   <header>settingform.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
