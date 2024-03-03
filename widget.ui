@@ -10,6 +10,18 @@
     <height>800</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>820</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>820</width>
+    <height>800</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Widget</string>
   </property>
@@ -17,92 +29,81 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLabel" name="label">
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>200</height>
+         <height>193</height>
         </size>
        </property>
        <property name="font">
         <font>
          <pointsize>90</pointsize>
-         <bold>false</bold>
         </font>
        </property>
        <property name="text">
-        <string>     启   动</string>
+        <string>启  动  ！</string>
        </property>
-       <property name="readOnly">
-        <bool>true</bool>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QToolBox" name="toolBox">
        <property name="currentIndex">
-        <number>4</number>
+        <number>1</number>
        </property>
-       <widget class="Form" name="page">
+       <widget class="Form" name="StarRail">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>0</y>
           <width>800</width>
-          <height>429</height>
+          <height>465</height>
          </rect>
         </property>
         <attribute name="label">
          <string>Star Rail</string>
         </attribute>
        </widget>
-       <widget class="Form" name="page_2">
+       <widget class="Form" name="Genshin">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>0</y>
           <width>800</width>
-          <height>429</height>
+          <height>465</height>
          </rect>
         </property>
         <attribute name="label">
          <string>GenShin Impact</string>
         </attribute>
        </widget>
-       <widget class="Form" name="page_4">
+       <widget class="Form" name="ZZZ">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>0</y>
           <width>800</width>
-          <height>429</height>
+          <height>465</height>
          </rect>
         </property>
         <attribute name="label">
          <string>ZZZ</string>
         </attribute>
        </widget>
-       <widget class="Form" name="page_3">
+       <widget class="Form" name="HK3">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>0</y>
           <width>800</width>
-          <height>429</height>
+          <height>465</height>
          </rect>
         </property>
         <attribute name="label">
          <string>Honkai Impact 3rd</string>
-        </attribute>
-       </widget>
-       <widget class="SettingForm" name="SettingPage">
-        <property name="font">
-         <font>
-          <pointsize>8</pointsize>
-         </font>
-        </property>
-        <attribute name="label">
-         <string>Setting</string>
         </attribute>
        </widget>
       </widget>
@@ -116,12 +117,6 @@
    <class>Form</class>
    <extends>QWidget</extends>
    <header>form.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>SettingForm</class>
-   <extends>QWidget</extends>
-   <header>settingform.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

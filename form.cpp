@@ -29,7 +29,12 @@ void Form::setBackgroundImage(const QString &path)
 
 void Form::startGame()
 {
-    QProcess *pro = new QProcess;
-    pro->setProgram(GamePath);
-    pro->startDetached();
+    if(GamePath == "") {
+
+    }else {
+        QProcess *pro = new QProcess;
+        pro->setProgram(GamePath);
+        pro->startDetached();
+    }
+
 }

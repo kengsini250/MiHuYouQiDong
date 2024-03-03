@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/Img">
-        <file>img/GenShin.jpg</file>
-        <file>img/starrail.png</file>
-    </qresource>
-</RCC>

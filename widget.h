@@ -16,8 +16,6 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
-public slots:
-    void updateGamePath();
 
 private:
     Ui::Widget *ui;
